@@ -1,0 +1,12 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{carleton/abstract}
+\usepackage{hyperref}
+\providecommand\phantomsection{}
+
+\renewenvironment{abstract}
+	{
+		\phantomsection
+		\addcontentsline{toc}{section}{Abstract}
+		\section*{\huge Abstract}
+	}
+	{ \cleardoublepage }

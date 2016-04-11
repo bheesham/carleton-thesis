@@ -1,0 +1,19 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{carleton/tocandlists}
+\usepackage{hyperref}
+\providecommand\phantomsection{}
+
+\newcommand{\cartocandlists}{
+	\tableofcontents
+	\cleardoublepage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{List of Figures}
+	\listoffigures
+	\cleardoublepage
+
+	\phantomsection
+	\addcontentsline{toc}{section}{List of Tables}
+	\listoftables
+	\cleardoublepage
+}

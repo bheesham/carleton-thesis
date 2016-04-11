@@ -1,0 +1,12 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{carleton/acks}
+\usepackage{hyperref}
+\providecommand\phantomsection{}
+
+\newenvironment{caracks}
+	{
+		\phantomsection
+		\addcontentsline{toc}{section}{Acknowledgements}
+		\section*{\huge Acknowledgements}
+	}
+	{ \cleardoublepage }

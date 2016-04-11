@@ -1,0 +1,36 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{carleton/titlepage}
+
+%% For the client to specify who their supervisor is.
+\newtoks\supervisor
+
+\newcommand{\cartitle}{
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			{\huge \@title}
+
+			\vspace{2cm}
+
+			\textbf{Author}: {\@author} \\
+			\textbf{Supervisor}: {\the\supervisor} \\
+			\textbf{Course}: COMP 4905: Computer Science Honours
+					Project \\
+
+			\vspace{8cm}
+
+			Submitted in partial fulfillment of the
+			requirements for the degree of \\
+			Bachelor of Computer Science, Honours \\
+
+			\vfill
+			at
+			\vfill
+
+			School of Computer Science \\
+			Carleton University \\
+			Canada \\
+			\@date
+		\end{center}
+	\end{titlepage}
+}

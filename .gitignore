@@ -1,0 +1,11 @@
+*.aux
+*.blg
+*.bbl
+*.dvi
+*.idx
+*.ist
+*.gl[so]
+*.lo[gtf]
+*.out
+*.toc
+*.pdf
